@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  background: #000;
+}
+
+:root {
+  --bg: transparent;
+  --logo-clr: #fff;
+  --link-clr: #a8a8a8;
+  --padding-y: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--padding-y) 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  transition: all 250ms ease-out;
+}
+
+.logo {
+  font-size: 3rem;
+  text-decoration: none;
+  font-family: "Staatliches", cursive;
+  color: var(--logo-clr);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--link-clr);
+}
+
+.navbar.change {
+  --padding-y: 5px;
+  --bg: #fff;
+  --logo-clr: #000;
+  --link-clr: #555;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background: url("./img/watch.png") center / 100% 100%;
+}
